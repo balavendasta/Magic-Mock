@@ -1,0 +1,59 @@
+# WordPress #
+############
+src/wp-content/uploads
+src/wp-content/cache
+src/wp-content/et-cache
+src/wp-content/advanced-cache.php
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+!wp-includes/**/*.gz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+.sass-cache
+
+# IDEs and Text Editors files
+.buildpath
+.project
+.settings/
+
+# Local Dev #
+#############
+node_modules
+*.css.map
+.env
+*.pem
+
+# Composer #
+############
+/vendor
+
+# Misc #
+########

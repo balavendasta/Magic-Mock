@@ -2,7 +2,12 @@ import '../src/css/main.css';
 import '../src/js/main.js';
 import Image from 'next/image';
 
+
 export default function ai_agent() {
+    const showAiagent = () => {
+        document.querySelector('.agent_overlay_sec').style.display = 'none';
+    }
+
     return (
         <div>
             <div className="magic_mock_ai_body">
@@ -26,7 +31,7 @@ export default function ai_agent() {
                 </div>
 
                 <div className="ai_agent_sec">
-                    <iframe src="https://sales.vendasta.com/rescue-plumbing/" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://sales.vendasta.com/rescue-plumbing/"  loading="lazy"></iframe>
                 </div>
 
                 <div className="ai_agent_footer">
@@ -39,7 +44,7 @@ export default function ai_agent() {
             <div className="agent_overlay_sec">
                 <div>
                     <h2> Your AI Agent is ready! </h2>
-                    <button className="submit ai-agent-btn" onclick="show_aiagent()">  <Image src={require('../src/images/spark-button-icon.png')} alt=""/> Give it a try! </button>
+                    <button className="submit ai-agent-btn" onClick={showAiagent}>  <Image src={require('../src/images/spark-button-icon.png')} alt=""/> Give it a try! </button>
                 </div>
             </div>
         </div>

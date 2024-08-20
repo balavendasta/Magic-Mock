@@ -247,7 +247,7 @@ body{
 .magic_mock_ai_body .ai_agent_sec iframe
 {
   width: 100%;
-  min-height: 600px;
+  min-height: 80vh;
 } 
 
 .agent_overlay_sec

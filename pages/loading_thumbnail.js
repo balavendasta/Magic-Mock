@@ -1,5 +1,7 @@
 import '../src/css/main.css';
 import Image from 'next/image';
+import Lottie from 'react-lottie-player';
+import lottieJson from '../src/js/aispark.json';
 
 export default function load_thumbnail() {
     return (
@@ -10,7 +12,14 @@ export default function load_thumbnail() {
 
              <div className="thumbnail_sec">
                 <div className="sparkle_animation"> 
-                      <Image src={require('../src/images/aispark.gif')} alt=""/>
+                      {/* <Image src={require('../src/images/aispark.gif')} alt=""/> */}
+                      <Lottie
+                        loop
+                        animationData={lottieJson}
+                        play
+                        style={{ width: 84, height: 84, marginRight: 'auto',
+                        marginLeft: 'auto', }}
+                      /> <br/> <br/>
                 </div>
                 <div className="web_thumb_img">
                      <Image src={require('../src/images/screenshot.png')} alt=""/>

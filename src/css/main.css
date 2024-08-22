@@ -179,8 +179,26 @@ body{
 {
     border-radius: 5px;
 }
-
-
+.checklist_points
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checklist_points ul 
+{
+    text-align: left;
+    list-style-type: disc;
+}
+.checklist_points ul li
+{
+    line-height: 34px;
+    font-size: 15px;
+}
+li::marker {
+    color: #3F9B63;
+    font-size: 1.5em;
+}
 /* -----------------------------------
    05. Ai agent preview page CSS
 -------------------------------------*/

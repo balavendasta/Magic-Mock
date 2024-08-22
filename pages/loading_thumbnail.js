@@ -13,7 +13,11 @@ export default function load_thumbnail() {
 
              <div className="thumbnail_sec">
                 <div className="sparkle_animation"> 
+
+                      {/* Gif Image */}
                       {/* <Image src={require('../src/images/aispark.gif')} alt=""/> */}
+
+                      {/* Lottie JS animation  */}
                       {/* <Lottie
                         loop
                         animationData={lottieJson}
@@ -22,7 +26,9 @@ export default function load_thumbnail() {
                         marginLeft: 'auto', }}
                       /> 
                        */}
-                      <div className="container">
+
+                       {/* css New animation  */}
+                        {/* <div className="container">
 
                             <div className="ai-orb">
                             <div className="ai-orb__circle"></div>
@@ -55,12 +61,23 @@ export default function load_thumbnail() {
                             </div>
                             </div>
 
-                        </div>
+                        </div> */}
                       
                       <br/> <br/>
                 </div>
                 <div className="web_thumb_img">
                      <Image src={require('../src/images/screenshot.png')} alt=""/>
+                     <div className="thumb_scanner">
+
+                     </div>
+                </div>
+                <div className="checklist_points">
+                    <ul>
+                      <li> Loading website </li>    
+                      <li> Scanning website </li>    
+                      <li> Generating AI Agent </li>    
+                      <li> Build preview </li>    
+                    </ul>    
                 </div>
              </div>    
 
